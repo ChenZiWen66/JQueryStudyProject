@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>捕获文本和HTML</title>
+</head>
+<body>
+<p>这是一个<b>段落</b></p>
+<button id="btn_1">点击显示段落文本</button>
+<button id="btn_2">点击显示段落HTML</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            alert("捕获文本"+$("p").text());
+        });
+        $("#btn_2").click(function () {
+            alert("捕获HTML"+$("p").html());
+        })
+    })
+</script>
+</html>
