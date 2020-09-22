@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>反复显示和隐藏</title>
+</head>
+<body>
+<p class="cls">段落1,class="cls"</p>
+<p class="cls" id="a">段落2,id="a",class="cls"</p>
+<p>段落3</p>
+<button id="btn_1">显示/隐藏</button>
+</body>
+<script>
+    $(function () {
+        $("button").click(function () {
+            $("p").toggle(1000);
+        });
+    })
+</script>
+</html>
