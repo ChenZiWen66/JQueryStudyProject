@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>挨个隐藏段落</title>
+</head>
+<body>
+    <p>段落1</p>
+    <p>段落2</p>
+    <p>段落3</p>
+    <p>段落4</p>
+    <button id="btn_1">隐藏第一个段落</button>
+    <button id="btn_2">隐藏最后一个段落</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            $("p:first").hide();
+        });
+        $("#btn_2").click(function () {
+            $("p:last").hide();
+        })
+    })
+</script>
+</html>
