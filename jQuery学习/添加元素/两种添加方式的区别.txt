@@ -1,0 +1,30 @@
+append:
+
+<p>
+  <span class="s1">s1</span>
+</p>
+<script>
+$("p").append('<span class="s2">s2</span>');
+</script>结果是这样的:
+<p>
+  <span class="s1">s1</span>
+  <span class="s2">s2</span>
+</p>
+after
+
+<p>
+  <span class="s1">s1</span>
+</p>
+<script>
+$("p").after('<span class="s2">s2</span>');
+</script>
+结果是这样的:
+
+<p>
+  <span class="s1">s1</span>
+</p>
+<span class="s2">s2</span>
+
+总结：
+append/prepend 是在选择元素内部嵌入。
+after/before 是在元素外面追加。

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>append和prepend添加元素</title>
+</head>
+<body>
+    <p>这是一段话</p>
+    <button id="btn_1">使用prepend在前面添加</button>
+    <button id="btn_2">使用append在后面添加</button>
+    <br/>
+    <button id="btn_3">使用prepend在前面添加一些内容</button>
+    <button id="btn_4">使用append在后面添加一些内容</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            $("p").prepend("<b>pre</b>");
+        });
+        $("#btn_2").click(function () {
+            $("p").append("<b>after</b>");
+        });
+        $("#btn_3").click(function () {
+            $("p").prepend("<b>前面的一句话</b>","<b>前面的两句话</b>","<b>前面的三句话</b>");
+        });
+        $("#btn_4").click(function () {
+            $("p").append("<b>后面的一句话</b>","<b>后面的两句话</b>","<b>后面的三句话</b>");
+        });
+    })
+</script>
+</html>
