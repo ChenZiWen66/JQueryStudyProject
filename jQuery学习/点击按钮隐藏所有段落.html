@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>点击按钮隐藏所有段落</title>
+</head>
+<body>
+    <p class="cls">段落1,class="cls"</p>
+    <p class="cls" id="a">段落2,id="a",class="cls"</p>
+    <p>段落3</p>
+    <button id="btn_1">所有段落消失</button>
+    <button id="btn_2">id=a段落消失</button>
+    <button id="btn_3">class=cls段落消失</button>
+</body>
+<script>
+    $(function () {
+        $("button#btn_1").click(function () {
+            $("p").hide();
+        });
+        $("button#btn_2").click(function () {
+            $("#a").hide();
+        });
+        $("#btn_3").click(function () {
+            $(".cls").hide();
+        })
+    })
+</script>
+</html>
