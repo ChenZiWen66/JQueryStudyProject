@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>点哪个删哪个</title>
+</head>
+<body>
+<p>段落1</p>
+<p>段落2</p>
+<p>段落3</p>
+<p>段落4</p>
+<p>段落5</p>
+</body>
+<script>
+    $(function () {
+        $("p").click(function () {
+            $(this).hide();
+        })
+    })
+</script>
+</html>
