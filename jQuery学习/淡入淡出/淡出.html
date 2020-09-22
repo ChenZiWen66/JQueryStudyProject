@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淡出</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <p id="p1">段落1</p>
+    <p id="p2">段落2</p>
+    <p id="p3">段落3</p>
+    <button id="btn_1">淡出</button>
+</body>
+<script>
+    $(function () {
+        $('#btn_1').click(function () {
+            $('#p1').fadeOut();
+            $('#p2').fadeOut('slow');
+            $('#p3').fadeOut(2000);
+        })
+    })
+</script>
+</html>
