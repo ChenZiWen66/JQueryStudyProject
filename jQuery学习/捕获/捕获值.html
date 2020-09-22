@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>捕获文本和HTML</title>
+</head>
+<body>
+<label>
+    <input type="text" value="这是一个值">
+</label>
+<button id="btn_1">点击显示输入框的值</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            alert("捕获值:"+$("input").val());
+        });
+    })
+</script>
+</html>
