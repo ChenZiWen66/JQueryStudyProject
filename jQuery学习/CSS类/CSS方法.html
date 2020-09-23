@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>CSS方法</title>
+</head>
+<body>
+<p id="a" class="green">段落一</p>
+<p id="b" class="blue">段落二</p>
+<p id="c" class="red">段落三</p>
+<p id="d" class="pink">段落四</p>
+<button id="btn_1">获取段落一的属性</button>
+<button id="btn_2">设置段落二的背景为黄</button>
+<button id="btn_3">设置段落三四的属性</button>
+</body>
+<style>
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color: pink;
+}
+</style>
+<script>
+$(function () {
+    $("#btn_1").click(function () {
+        alert($("#a").css("background-color"));
+    });
+    $("#btn_2").click(function () {
+        $("#b").css("background-color","yellow");
+    });
+    $("#btn_3").click(function () {
+        $("#c,#d").css({"background-color":"orange","font-size":"200%"});
+    });
+})
+</script>
+</html>
