@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>after和before添加</title>
+</head>
+<body>
+    <p id="passage"><b>一段话</b></p>
+    <button id="btn_1">在前面插入内容</button>
+    <button id="btn_2">在后面插入内容</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            $("#passage").before("<p>前面的一句话</p>","<p>前面的两句话</p>","<p>前面的三句话</p>")
+        });
+        $("#btn_2").click(function () {
+            $("#passage").after("<p>后面的一句话</p>","<p>后面的两句话</p>","<p>后面的三句话</p>")
+        });
+    })
+</script>
+</html>

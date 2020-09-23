@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>删除元素</title>
+</head>
+<body>
+    <p class="del">段落一</p>
+    <p id="obj">段落二</p>
+    <p class="del">段落三</p>
+    <p>段落四</p>
+    <button id="btn_1">remove删除obj</button>
+    <button id="btn_2">empty删除obj</button>
+    <button id="btn_3">remove删除class</button>
+</body>
+<script>
+    $(function () {
+        $("#btn_1").click(function () {
+            $("#obj").remove();
+        });
+        $("#btn_2").click(function () {
+            $("#obj").empty();
+        });
+        $("#btn_3").click(function () {
+            $("p").remove(".del");
+        });
+
+    })
+</script>
+</html>
